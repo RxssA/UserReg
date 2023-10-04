@@ -10,15 +10,15 @@ import org.springframework.stereotype.Service;
         private final EmailService emailService;
 
         @Autowired
-        public  UserService(EmailService emailService){
+        public UserService(EmailService emailService){
             this.emailService = emailService;
         }
-        public void registerUser(String username, String email){
+        public String registerUser(String username, String email){
 
 
 
 
-            emailService.sendEmail(email, "Welcome to Our platform!");
+            return emailService.sendEmail(email, "Welcome to Our platform!");
         }
 
     }
