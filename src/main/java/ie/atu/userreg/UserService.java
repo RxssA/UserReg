@@ -18,7 +18,7 @@ import org.springframework.stereotype.Service;
 
 
 
-            emailService.sendEmail(email, "Welcome to our platform!");
+            emailService.sendEmail(email, "Welcome to Our platform!");
         }
 
     }
